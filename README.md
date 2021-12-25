@@ -11,12 +11,21 @@
 # 安装
 
 - **首先**安装 [HammerSpoon](https://github.com/Hammerspoon/hammerspoon)
-- 下载、拷贝或者直接 `git clone` 这些文件：
-  - init.lua - 主程序入口
-  - key-binding.lua - 窗口管理快捷键配置
-  - vim-binding.lua - 类 Vim 快捷键绑定
-  - window-management.lua - 窗口管理
-- 将`init.lua`, `key-binding.lua`, `vim-binding.lua`  `window-management.lua` 放到 `~/.hammerspoon` 路径下
+
+
+```shell
+
+mkdir ~/.hammerspoon
+cd ~/.hammerspoon
+git clone https://github.com/REsab/macHammerspoon
+cp macHammerspoon/* ./
+
+```
+- init.lua - 主程序入口
+- key-binding.lua - 窗口管理快捷键配置
+- vim-binding.lua - 类 Vim 快捷键绑定
+- window-management.lua - 窗口管理
+
 
 # 快捷键
 
