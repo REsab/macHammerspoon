@@ -18,7 +18,8 @@ local keyHandler = function(e)
   ,f = "delete"
   ,i = "home"
   ,o = "end"
-
+  ,n = "forwarddelete"
+  ,m = "delete"
 
 
   }
