@@ -9,7 +9,20 @@ local event    = eventtap.event
 local inspect  = require "hs.inspect"
 
 local keyHandler = function(e)
-  local watchFor = { h = "left", j = "down", k = "up", l = "right" }
+  local watchFor = { h = "left", j = "down",
+                     k = "up",
+                     l = "right"
+  ,u = "pageup"
+  ,i = "pagedown"
+  ,g = "forwarddelete"
+  ,f = "delete"
+  ,i = "home"
+  ,o = "end"
+
+
+
+  }
+
   local actualKey = e:getCharacters(true)
   local replacement = watchFor[actualKey:lower()]
   if replacement then
